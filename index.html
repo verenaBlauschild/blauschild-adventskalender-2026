@@ -150,6 +150,15 @@ footer{margin-top:26px;background:#061b38;color:#d7e7f5;padding:48px 0 38px}.foo
 /* Gewinner / Vincitori: titolo bilingue sempre su una riga */
 .winner-box .winners-title{white-space:nowrap;font-size:clamp(1.45rem,4.35vw,3.65rem);letter-spacing:-.035em}
 @media(max-width:390px){.winner-box .winners-title{font-size:clamp(1.2rem,6vw,1.65rem)}}
+
+/* Anteprima del regolamento illustrato: non sostituisce il PDF ufficiale */
+.rules-poster{max-width:760px;margin:27px auto 33px;text-align:center}
+.rules-poster-link{display:block;overflow:hidden;border:1px solid #d5e1ee;border-radius:17px;background:#fff;box-shadow:0 14px 36px rgba(10,36,70,.12)}
+.rules-poster-link img{display:block;width:100%;height:auto}
+.rules-poster-link:focus-visible{outline:3px solid #efb650;outline-offset:4px}
+.rules-poster .poster-caption{max-width:730px;margin:13px auto 0;font-size:.91rem;color:#496784;line-height:1.6}
+.rules-poster .poster-caption strong{color:#153352}
+@media(max-width:640px){.rules-poster{margin:22px -14px 27px}.rules-poster-link{border-radius:12px}.rules-poster .poster-caption{padding:0 10px;font-size:.85rem}}
 </style>
 </head>
 <body>
@@ -313,6 +322,13 @@ footer{margin-top:26px;background:#061b38;color:#d7e7f5;padding:48px 0 38px}.foo
           <div class="eyebrow" data-i18n="docsEyebrow">Offizielle Unterlagen</div>
           <h2 class="section-title" data-i18n="docsTitle">Teilnahmebedingungen & Datenschutz</h2>
           <p class="section-intro" data-i18n="docsIntro">Teilnahmebedingungen und Datenschutzhinweise sind als PDF abrufbar. </p>
+          <figure class="rules-poster">
+            <a class="rules-poster-link" href="regolamento-grafico.png" target="_blank" rel="noopener noreferrer" aria-label="Infografik vergrößern / Ingrandisci l'infografica">
+              <img src="regolamento-grafico.png" alt="Blauschild Adventskalender 2026 – grafische Zusammenfassung der Teilnahme / riepilogo grafico del regolamento" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="poster-caption"><strong>Grafische Übersicht / Riepilogo grafico</strong> · Zum Vergrößern anklicken / Clicca per ingrandire.<br>
+              Teilnahme nur ab 18 Jahren mit Wohnsitz oder Domizil in Südtirol; die offizielle Gewinnvergabe erfolgt nach Prüfung. / Partecipazione riservata ai maggiorenni residenti o domiciliati in Alto Adige; i premi vengono assegnati ufficialmente dopo le verifiche. Maßgeblich ist das vollständige PDF-Reglement / Fa fede il regolamento ufficiale PDF.</figcaption>
+          </figure>
           <div class="docs-grid">
             <article class="doc">
               <div class="doc-icon">📘</div>
